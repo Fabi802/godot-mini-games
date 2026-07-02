@@ -4,8 +4,9 @@ List of the games:
 - Flappy Bird
 - Minesweeper
 - Dino Runner
+- Tictactoe
 
-
+More informations on the games you can find in each folder under OVERVIEW.
 
 About Me:
 I am a Computer Science student passionate about game development and software engineering.  
