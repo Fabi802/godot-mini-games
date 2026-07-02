@@ -1,5 +1,6 @@
 This is a collection of some games I made with godot.
 
 List of the games:
-Flappy Bird
-Minesweeper
+- Flappy Bird
+- Minesweeper
+- Dino Runner
