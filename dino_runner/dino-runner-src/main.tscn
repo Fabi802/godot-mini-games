@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bvn3nxt7ul78m"]
+
+[ext_resource type="PackedScene" uid="uid://bikbd20kl1kco" path="res://background.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://j5jol0nco6j8" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bo6h26rgld3j7" path="res://dino.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://c3id143sohjuk" path="res://spawner.gd" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://68jjp77ohiky" path="res://restart_manager.gd" id="5_lquwl"]
+
+[node name="main" type="Node2D" unique_id=469630856]
+script = ExtResource("1_1bvp3")
+
+[node name="background" parent="." unique_id=2105550967 instance=ExtResource("1_0xm2m")]
+
+[node name="dino" parent="." unique_id=340352327 instance=ExtResource("1_ig7tw")]
+position = Vector2(23, 76)
+
+[node name="spawner" type="Node2D" parent="." unique_id=502305864]
+script = ExtResource("4_1bvp3")
+
+[node name="Marker2D" type="Marker2D" parent="spawner" unique_id=2118322970]
+position = Vector2(361, 76)
+
+[node name="SpawnTimer" type="Timer" parent="spawner" unique_id=692112051]
+
+[node name="score_label" type="Label" parent="." unique_id=89456137]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_font_sizes/font_size = 12
+text = "TEST"
+
+[node name="restartManager" type="Node2D" parent="." unique_id=696825500]
+script = ExtResource("5_lquwl")

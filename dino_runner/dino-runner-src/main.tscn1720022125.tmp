@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bvn3nxt7ul78m"]
+
+[ext_resource type="Texture2D" uid="uid://caommranemt5c" path="res://assets/ground.png" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bo6h26rgld3j7" path="res://dino.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://bijnm7ijc5n7x" path="res://background.gd" id="2_h2yge"]
+
+[node name="main" type="Node2D" unique_id=469630856]
+
+[node name="background" type="Sprite2D" parent="." unique_id=1024098765]
+position = Vector2(251, 50)
+texture = ExtResource("1_0xm2m")
+region_enabled = true
+region_rect = Rect2(0, 0, 600, 100)
+script = ExtResource("2_h2yge")
+
+[node name="dino" parent="." unique_id=340352327 instance=ExtResource("1_ig7tw")]
+position = Vector2(23, 76)
