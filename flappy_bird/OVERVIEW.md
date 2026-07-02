@@ -31,4 +31,5 @@ What I Learned:
   Procedural obstacle generation
 
 ![ingame](https://raw.githubusercontent.com/Fabi802/godot-mini-games/main/flappy_bird/screenshots/ingame.png)
-![ingame](flappy_bird/screenshots/ingame.png)
+![ingame](https://raw.githubusercontent.com/Fabi802/godot-mini-games/main/flappy_bird/screenshots/main_menu.png)
+![ingame](https://raw.githubusercontent.com/Fabi802/godot-mini-games/main/flappy_bird/screenshots/skin_selection.png)
