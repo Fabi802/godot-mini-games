@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bn5stl6inpyw4"]
+
+[ext_resource type="Script" uid="uid://i6qgalkq3xsm" path="res://button.gd" id="1_r04n3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n4tde"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0vvm8"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r04n3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[node name="Button" type="Button" unique_id=194252578]
+offset_right = 64.0
+offset_bottom = 64.0
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxFlat_n4tde")
+text = "X"
+flat = true
+script = ExtResource("1_r04n3")
+
+[node name="Panel" type="Panel" parent="." unique_id=258169180]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_0vvm8")
+
+[node name="Panel2" type="Panel" parent="." unique_id=1403157029]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_r04n3")
+
+[connection signal="pressed" from="." to="." method="draw_button"]

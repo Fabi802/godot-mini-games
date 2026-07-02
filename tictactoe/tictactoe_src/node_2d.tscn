@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://ch1pgd00v81xm"]
+
+[ext_resource type="Script" uid="uid://bheb2bw3n4f8i" path="res://node_2d.gd" id="1_wtcfe"]
+
+[node name="Main" type="Control" unique_id=1257340180]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wtcfe")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=874770450]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 222.0
+mouse_filter = 1
+color = Color(0, 0, 0, 1)
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=873771294]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 222.0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 3
+
+[node name="Button" type="Button" parent="." unique_id=1965214302]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 116.0
+offset_top = 190.0
+offset_right = 191.0
+offset_bottom = 221.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 8
+text = "RESTART"
+
+[node name="CheckButton" type="CheckButton" parent="." unique_id=146825477]
+layout_mode = 0
+offset_top = 191.0
+offset_right = 67.0
+offset_bottom = 222.0
+text = "1P"
+
+[node name="Label" type="Label" parent="." unique_id=653813547]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 195.0
+offset_right = 106.0
+offset_bottom = 218.0
+text = "2P"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CheckButton" to="." method="_on_check_button_pressed"]
