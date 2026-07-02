@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://dio1gyt21tv1a"]
+
+[ext_resource type="Script" uid="uid://jaf84i63haa7" path="res://scripts/skin_menu.gd" id="1_viktg"]
+[ext_resource type="Texture2D" uid="uid://bf12gl8mt4vgu" path="res://skins/skin1.png" id="2_e12no"]
+[ext_resource type="Texture2D" uid="uid://cju8yh2vhixmo" path="res://skins/skin2.png" id="3_0edpv"]
+[ext_resource type="Texture2D" uid="uid://cj0r26sw3uv1k" path="res://skins/skin3.png" id="4_h4mfo"]
+[ext_resource type="Texture2D" uid="uid://xfplqmfsfq3q" path="res://skin_background.png" id="5_0edpv"]
+
+[node name="skin_menu" type="Control" unique_id=472171833]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_viktg")
+
+[node name="Button" type="Button" parent="." unique_id=729760308]
+layout_mode = 0
+offset_left = 505.0
+offset_top = 481.0
+offset_right = 694.0
+offset_bottom = 551.0
+text = "BACK"
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=702091872]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 15.999999
+offset_right = 137.0
+offset_bottom = 48.0
+scale = Vector2(6.5, 6.5)
+columns = 5
+
+[node name="Skin1" type="TextureButton" parent="GridContainer" unique_id=1864630621]
+layout_mode = 2
+texture_normal = ExtResource("2_e12no")
+
+[node name="Skin2" type="TextureButton" parent="GridContainer" unique_id=435446044]
+layout_mode = 2
+texture_normal = ExtResource("3_0edpv")
+
+[node name="Skin3" type="TextureButton" parent="GridContainer" unique_id=2048063201]
+layout_mode = 2
+texture_normal = ExtResource("4_h4mfo")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=642057577]
+z_index = -4
+layout_mode = 0
+offset_right = 1199.0
+offset_bottom = 598.0
+mouse_filter = 2
+texture = ExtResource("5_0edpv")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="GridContainer/Skin1" to="." method="_on_skin_1_pressed"]
+[connection signal="pressed" from="GridContainer/Skin2" to="." method="_on_skin_2_pressed"]
+[connection signal="pressed" from="GridContainer/Skin3" to="." method="_on_skin_3_pressed"]
