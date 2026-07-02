@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://tacqdb2032u8"]
+
+[ext_resource type="Script" uid="uid://8ekjk6eej718" path="res://cell.gd" id="1_yh0nt"]
+
+[node name="cell" type="Button" unique_id=2073580417]
+custom_minimum_size = Vector2(50, 50)
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_font_sizes/font_size = 20
+script = ExtResource("1_yh0nt")

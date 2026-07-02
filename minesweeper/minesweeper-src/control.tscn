@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://dxi0jtflm765n"]
+
+[ext_resource type="Script" uid="uid://ccbxn0vm70onu" path="res://control.gd" id="1_0fbet"]
+
+[node name="Control" type="Control" unique_id=1707551764]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -536.0
+offset_bottom = -112.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=822574909]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 10
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1322907272]
+
+[node name="win" type="Label" parent="CanvasLayer" unique_id=1609831015]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -41.5
+offset_top = -11.5
+offset_right = 41.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "YOU WON!"
+
+[node name="lost" type="Label" parent="CanvasLayer" unique_id=2122978620]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -41.0
+offset_top = -11.5
+offset_right = 41.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "YOU LOST!"
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=88518216]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -248.0
+offset_right = 4.0
+offset_bottom = -240.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "RESTART"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
