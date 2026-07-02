@@ -31,3 +31,6 @@ What I Learned
 - Procedural obstacle generation
 - Collision detection
 
+![start](https://raw.githubusercontent.com/Fabi802/godot-mini-games/main/dino_runner/screenshots/start.png)
+![bird](https://raw.githubusercontent.com/Fabi802/godot-mini-games/main/dino_runner/screenshots/bird.png)
+![death](https://raw.githubusercontent.com/Fabi802/godot-mini-games/main/dino_runner/screenshots/death.png)
