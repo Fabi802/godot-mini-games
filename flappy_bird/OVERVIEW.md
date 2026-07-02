@@ -1,34 +1,34 @@
-Flappy Bird Clone
+Flappy Bird 
 
 A simple Flappy Bird clone developed with the Godot Engine.
 This project was created to practice core game development concepts such as physics, collision detection, UI design, and game state management.
 
 Gameplay:
-  Control the bird and navigate through an endless series of pipes without crashing.
-  Press a key to make the bird flap
-  Avoid hitting pipes or the ground
-  Try to achieve the highest score possible
+- Control the bird and navigate through an endless series of pipes without crashing.
+- Press a key to make the bird flap
+- Avoid hitting pipes or the ground
+- Try to achieve the highest score possible
 
 Features:
-  Smooth 2D physics-based movement
-  Randomly generated obstacles (pipes)
-  Score system
-  Highscore saving system (persistent data storage)
-  Skin selection system (customizable bird appearance)
-  Simple and clean UI
+- Smooth 2D physics-based movement
+-  Randomly generated obstacles (pipes)
+- Score system
+- Highscore saving system (persistent data storage)
+- Skin selection system (customizable bird appearance)
+- Simple and clean UI
 
 Built with:
-  Godot Engine
-  GDScript
+- Godot Engine
+- GDScript
 
 What I Learned:
-  Game physics and gravity simulation
-  Collision detection in 2D games
-  Scene and object management in Godot
-  Game state handling (start, game over, restart)
-  Persistent data storage (saving high scores)
-  UI systems and player customization (skin selection)
-  Procedural obstacle generation
+- Game physics and gravity simulation
+- Collision detection in 2D games
+- Scene and object management in Godot
+- Game state handling (start, game over, restart)
+- Persistent data storage (saving high scores)
+- UI systems and player customization (skin selection)
+- Procedural obstacle generation
 
 ![ingame](https://raw.githubusercontent.com/Fabi802/godot-mini-games/main/flappy_bird/screenshots/ingame.png)
 ![ingame](https://raw.githubusercontent.com/Fabi802/godot-mini-games/main/flappy_bird/screenshots/main_menu.png)
