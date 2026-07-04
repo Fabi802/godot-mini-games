@@ -6,7 +6,8 @@ List of the games:
 - Dino Runner
 - Tictactoe
 
-You can play the games under https://fabi802.github.io/godot-mini-games/
+You can play the games under https://fabi802.github.io/godot-mini-games/.
+
 More informations on the games you can find in each folder under OVERVIEW.
 
 About Me:
